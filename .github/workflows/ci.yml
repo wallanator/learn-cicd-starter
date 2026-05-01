@@ -31,4 +31,4 @@ jobs:
         uses: actions/setup-go@v5
 
       - name: Test style
-        run: test -z(go fmt ./...)
+        run: test -z $(go fmt ./...)
