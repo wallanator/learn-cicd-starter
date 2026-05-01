@@ -15,6 +15,8 @@ jobs:
 
       - name: Set up Go
         uses: actions/setup-go@v5
+        with:
+          go-version: "1.25.1"
 
       - name: Print go version
         run: go test ./... -cover
@@ -29,6 +31,8 @@ jobs:
 
       - name: Set up Go
         uses: actions/setup-go@v5
+        with:
+          go-version: "1.25.1"
 
       - name: Test style
         run: test -z $(go fmt ./...)
