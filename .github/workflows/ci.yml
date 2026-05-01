@@ -15,7 +15,6 @@ jobs:
 
       - name: Set up Go
         uses: actions/setup-go@v5
-        run: go test ./..
 
       - name: Print go version
-        run: (go version)
+        run: go test ./...
